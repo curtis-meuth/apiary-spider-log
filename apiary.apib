@@ -22,38 +22,45 @@ Access to Spider Resources
 
 + Response 200 (application/json)
 
-        {
-            "page" :
+    + Header
+        
+            ETag: "euyfewuyfvew76f7"
+            cache-control: max-age=600
+            
+    + Body
+    
             {
-                "number" : 1,
-                "size" : 10,
-                "totalPages" : 20
-            },
-            [
+                "page" :
                 {
-                    "sightedAt" : "2014-08-28T07:00",
-                    "imageUrl" : "https://s3-eu-west-1.amazonaws.com/uid-19247681/201408/14562881209_04a7f43d_z.jpg",
-                    "description" : "Spider Is saw on the train",
-                    "tags" : [
-                        "stripy"
-                    ]
+                    "number" : 1,
+                    "size" : 10,
+                    "totalPages" : 20
                 },
-                {
-                    "sightedAt" : "2014-08-28T13:00",
-                    "imageUrl" : "https://s3-eu-west-1.amazonaws.com/uid-19247681/201408/14587204878_91405ee2e1_z.jpg",
-                    "description" : "Spider Is saw at the office",
-                    "tags" : [
-                        "big"
-                    ]
-                },
-                {
-                    "sightedAt" : "2014-08-28T19:00",
-                    "imageUrl" : "https://s3-eu-west-1.amazonaws.com/uid-19247681/201408/14776091214_4699046e5d_z.jpg",
-                    "description" : "Spider Is saw at home",
-                    "tags" : [
-                        "big",
-                        "stripy"
-                    ]
-                }
-            ]
-        }
+                [
+                    {
+                        "sightedAt" : "2014-08-28T07:00",
+                        "imageUrl" : "https://s3-eu-west-1.amazonaws.com/uid-19247681/201408/14562881209_04a7f43d_z.jpg",
+                        "description" : "Spider Is saw on the train",
+                        "tags" : [
+                            "stripy"
+                        ]
+                    },
+                    {
+                        "sightedAt" : "2014-08-28T13:00",
+                        "imageUrl" : "https://s3-eu-west-1.amazonaws.com/uid-19247681/201408/14587204878_91405ee2e1_z.jpg",
+                        "description" : "Spider Is saw at the office",
+                        "tags" : [
+                            "big"
+                        ]
+                    },
+                    {
+                        "sightedAt" : "2014-08-28T19:00",
+                        "imageUrl" : "https://s3-eu-west-1.amazonaws.com/uid-19247681/201408/14776091214_4699046e5d_z.jpg",
+                        "description" : "Spider Is saw at home",
+                        "tags" : [
+                            "big",
+                            "stripy"
+                        ]
+                    }
+                ]
+            }
